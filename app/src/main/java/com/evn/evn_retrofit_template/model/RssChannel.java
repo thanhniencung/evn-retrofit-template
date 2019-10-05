@@ -6,8 +6,6 @@ import org.simpleframework.xml.Root;
 
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 @Root(name = "channel", strict = false)
 public class RssChannel {
     @Element(name = "title")

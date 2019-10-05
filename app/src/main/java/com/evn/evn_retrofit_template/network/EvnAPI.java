@@ -1,8 +1,6 @@
 package com.evn.evn_retrofit_template.network;
 
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.converter.jaxb.JaxbConverterFactory;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
 public class EvnAPI {
