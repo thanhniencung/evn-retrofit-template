@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.evn.evn_retrofit_template.model.News;
 import com.evn.evn_retrofit_template.model.Repo;
+import com.evn.evn_retrofit_template.model.RssItem;
 import com.evn.evn_retrofit_template.network.EvnAPI;
 import com.evn.evn_retrofit_template.network.EvnResponse;
 
@@ -22,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EvnAPI.getEvnService().listRepos()
-                .enqueue(new EvnResponse<List<Repo>>() {
+                .enqueue(new EvnResponse<News>() {
                     @Override
-                    public void onData(List<Repo> data) {
+                    public void onData(News data) {
                         String a = "";
                     }
 
